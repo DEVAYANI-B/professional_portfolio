@@ -1,20 +1,17 @@
-// No change in imports
+
 import React from "react";
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion";
 import "./index.css";
 import { Typewriter } from 'react-simple-typewriter';
 import { useState } from 'react';
-import { FaSun, FaMoon } from "react-icons/fa";
 import { SiLeetcode, SiHackerrank, SiCodechef } from "react-icons/si";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
   return (
-    <div className={darkMode ? "dark" : ""}>
-      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
-        <Navbar toggleDarkMode={() => setDarkMode(!darkMode)} darkMode={darkMode} />
+    <div className="dark">
+      <div className="min-h-screen bg-gray-900 text-gray-100 transition duration-500">
+        <Navbar />
 
         <section id="home" className="pt-24 scroll-mt-24">
           <Home />
@@ -36,22 +33,16 @@ function App() {
   );
 }
 
-function Navbar({ toggleDarkMode, darkMode }) {
+function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-6 py-4 bg-gray-50 dark:bg-gray-900 shadow-md sticky top-0 z-50">
-      <h1 className="text-3xl font-extrabold text-teal-600 dark:text-teal-400 tracking-tight">Devayani</h1>
-      <div className="space-x-6 font-medium flex items-center">
+    <nav className="flex flex-wrap justify-between items-center px-4 py-4 bg-gray-900 shadow-md sticky top-0 z-50">
+      <h1 className="text-2xl md:text-3xl font-extrabold text-teal-400 tracking-tight">Devayani</h1>
+      <div className="space-x-4 md:space-x-6 font-medium flex flex-wrap items-center mt-2 md:mt-0">
         <NavLink to="home">Home</NavLink>
         <NavLink to="projects">Projects</NavLink>
         <NavLink to="skills">Skills</NavLink>
         <NavLink to="profiles">CodeProfiles</NavLink>
         <NavLink to="contact">Contact</NavLink>
-        <button
-          onClick={toggleDarkMode}
-          className="ml-4 px-3 py-2 rounded-full bg-gray-200 dark:bg-gray-700 text-sm hover:bg-gray-300 dark:hover:bg-gray-600 transition flex items-center"
-        >
-          {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon className="text-gray-600" />}
-        </button>
       </div>
     </nav>
   );
@@ -64,11 +55,13 @@ const NavLink = ({ to, children }) => (
     smooth={true}
     offset={-100}
     duration={500}
-    className="cursor-pointer text-gray-800 dark:text-gray-200 hover:text-teal-600 dark:hover:text-teal-400 transition duration-300"
+    className="cursor-pointer text-gray-200 hover:text-teal-400 transition duration-300 text-sm md:text-base"
   >
     {children}
   </Link>
 );
+
+
 
 function Home() {
   return (

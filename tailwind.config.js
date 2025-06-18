@@ -1,8 +1,13 @@
+// tailwind.config.js
 module.exports = {
-  darkMode: 'class', // Add this line
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'neon-teal': '#00f7ff',
+      },
+    },
   },
   plugins: [],
 };
