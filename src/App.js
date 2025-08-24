@@ -279,7 +279,7 @@ function Profiles() {
       <h2 className="text-3xl font-extrabold text-center mb-8 text-teal-600 dark:text-teal-400">Competitive Profiles</h2>
       <div className="flex flex-col md:flex-row justify-center gap-8 text-center">
         <motion.a
-          href="https://leetcode.com/"
+          href="https://leetcode.com/u/DEVAYANI_B/"
           target="_blank"
           rel="noreferrer"
           className="flex flex-col items-center bg-gray-50 dark:bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition"
@@ -289,7 +289,7 @@ function Profiles() {
           <p className="font-semibold text-teal-600 dark:text-teal-400">LeetCode</p>
         </motion.a>
         <motion.a
-          href="https://www.hackerrank.com/"
+          href="https://www.hackerrank.com/profile/devayani_b2022c1"
           target="_blank"
           rel="noreferrer"
           className="flex flex-col items-center bg-gray-50 dark:bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition"
@@ -299,7 +299,7 @@ function Profiles() {
           <p className="font-semibold text-teal-600 dark:text-teal-400">HackerRank</p>
         </motion.a>
         <motion.a
-          href="https://www.codechef.com/"
+          href="https://www.codechef.com/users/devayanib2022c"
           target="_blank"
           rel="noreferrer"
           className="flex flex-col items-center bg-gray-50 dark:bg-gray-800 p-4 rounded-xl shadow hover:shadow-xl transition"
