@@ -93,7 +93,7 @@ function Home() {
         </span>
       </p>
       <a
-        href="/resume.pdf"
+        href="https://drive.google.com/drive/folders/1tpLIw1SfsD559UGT2bpl_dE0jU1tyE9V?usp=drive_link"
         download
         className="mt-6 inline-block bg-teal-600 text-white px-6 py-3 rounded-full hover:bg-teal-700 shadow transition"
       >
